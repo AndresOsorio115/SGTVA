@@ -117,6 +117,8 @@
 		    	<legend class="contenedorResponsable">Responsable</legend>
 				
 		    		<label>Nombre:</label> <input type="text" class="form-control" id="nombreR"/>
+                                
+                                <label>SegundoNombre:</label> <input type="text" class="form-control" id="nombreR"/>
 				
 					<label id="cedulal">Cedula:</label> <input type="text" class="form-control" id="cedulaR" />
 				       
