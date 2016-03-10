@@ -1,0 +1,101 @@
+body {
+	background-color: #fff;
+	margin: 30px;
+	font: 13px/20px normal Helvetica, Arial, sans-serif;
+	color: #4F5155;
+}
+
+a {
+	color: #003399;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+h1 {
+	color: #20912D;
+	background-color: transparent;
+	border-bottom: 1px solid #D0D0D0;
+	text-align: center;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
+
+h1 img {
+
+	height: 200px;
+	width: 200px;
+}
+
+code {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+	background-color: #f9f9f9;
+	border: 1px solid #D0D0D0;
+	color: #002166;
+	display: block;
+	margin: 14px 0 14px 0;
+	padding: 12px 10px 12px 10px;
+}
+
+#body {
+	margin: 0 15px 0 15px;
+}
+
+p.footer {
+	text-align: right;
+	font-size: 11px;
+	border-top: 1px solid #D0D0D0;
+	line-height: 32px;
+	padding: 0 10px 0 10px;
+	margin: 20px 0 0 0;
+}
+
+p input {
+
+	font-size: 18px;
+}
+
+#container {
+	margin: 10px;
+	border: 1px solid #D0D0D0;
+	box-shadow: 0 0 8px #D0D0D0;
+}
+
+.login p {
+
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.login p input {
+
+  width: 100%;
+}
+
+#btnLogin {
+
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+}
+
+.scheduler-border-login {
+
+  margin: 5%;
+  margin-right: 35%;
+  margin-left: 35%;
+  border: 1px solid #D0D0D0;
+}
+
+fieldset .scheduler-border {
+
+    border: 1px groove #ddd !important;
+    padding: 0px 20px;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+}
+
+h2 {
+	color: #20912D;
+	background-color: transparent;
+}

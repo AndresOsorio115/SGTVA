@@ -1,0 +1,396 @@
+header {
+
+  background: #20912D;
+}
+
+header h1 {
+
+  text-align: center;
+  margin-top: 0%;
+  padding-bottom: 20px;
+}
+
+header h1 img {
+
+  margin-top: 20px;
+}
+
+h3 {
+
+	 margin-top: 50px;
+   color: #20912D;
+}
+
+
+.tituloProceso{
+  margin-top: 10px;
+}
+
+#ui{
+
+  margin-top: 20px;
+}
+.main {
+  display: table;
+  width: 100%;
+  height: 970px;
+}
+
+.navegacion {
+
+  display: table-column;
+  width: 12%;
+  float: left;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 20px;
+  padding: 0% 0%;
+
+}
+
+.navegacion ul li a {
+
+  background: #20912D;
+  color: #FFF;
+
+}
+
+.navegacion ul li a:hover {
+         
+    background: green;
+}
+
+.container{
+
+	display: table-column;
+	width: 84%;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-left: 20px;
+	float: left;
+	height: 700px;
+}
+
+.page-header{
+	margin-top: 0px;
+}
+
+.vContainer{
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.uContainer{
+
+  margin-top: 50px;
+}
+
+.divReportes {
+
+   margin-top: 50px;
+}
+
+.dtabla {
+  
+  overflow: auto;
+  display: table-column;
+  float: left;
+  margin: 0;
+  padding: 0% 0%;
+  width: 50%;
+  height: 400px;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+.crudv{
+
+	display: table-column;
+	width: 40%;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-left: 40px;
+	float: left;
+}
+
+.crudVButtons ul li button {
+
+	width: 125px;
+	margin-bottom: 30px;
+}
+
+footer {
+
+  height: 150px;
+  background: #292929;
+}
+
+footer div {
+
+  padding-top: 20px;
+}
+
+footer div p {
+
+  color: #FFF;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.infoUsuario {
+
+  width: 50%;
+}
+
+.tablaR {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%; 
+}
+
+#td{
+  margin-top: 5px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+#fechaActual{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+fieldset.contenedorReserva {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 0.8em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 690px;
+    display: table;
+}
+
+legend.contenedorReserva{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+
+.cSolicitante {
+
+  display: table-column;
+    float: left;
+    margin: 0;
+    padding: 0% 0%;
+    width: 39%;
+    height: 83%;
+}
+
+fieldset.contenedorSolicitate {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 100%;
+}
+
+legend.contenedorSolicitate{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+.cActividad{
+
+  display: table-column;
+  width: 28%;
+  margin-top: 1px;
+  margin-right: 1px;
+  margin-left: 10px;
+  float: left;
+  height: 90%;
+}
+
+fieldset.contenedorActividad {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 100%;
+}
+
+legend.contenedorActividad{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+fieldset.contenedorResponsable {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 43%;
+}
+
+legend.contenedorResponsable{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+#lDescripcion{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px; 
+   color: #20912D;
+}
+
+.cHoras{
+
+  display: table-column;
+  width: 30%;
+  margin-top: 1px;
+  margin-right: 1px;
+  margin-left: 10px;
+  float: left;
+  height: 83%;
+}
+
+
+fieldset.contenedorSitio {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 48%;
+}
+
+legend.contenedorSitio{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+fieldset.contenedorHora {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 48%;
+}
+
+legend.contenedorHora{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+#descripcion {
+
+    height: 203px;
+}
+
+#unidades{
+  overflow: auto;
+  height: 310px;
+}
+#destinol{
+  margin-top: 35px; 
+}
+
+#cedulal{
+  margin-top: 30px; 
+}
+
+#sH, #sL{
+  width: 100%;
+}
+
+#horaS, #minutosS,#horaL, #minutosL{
+  width: 45px;
+  margin-right: 0px;
+  display: inline;
+}
+
+ #cmbHoraS, #cmbHoraL{
+   display: inline;
+  margin-left: 10px;
+  width: 70px;
+}
+
+.contenedorHoraL{
+  margin-top: 30px;
+}
+
+#cRV{
+    
+    margin-top: 25px;
+    width: 150px;
+
+}
+
+#contenedorBotones{
+  text-align: center;
+}
+
+.unidadE, .vehiculoE, .fechaActual{
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+}
+
+fieldset.contenedorReserva {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    height: 40%;
+}
+
+legend.contenedorReserva{
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    color: #20912D;
+}
+
+
+#divTabla{
+  overflow: auto;
+  height: 90%;
+}
+
+#addEvent{
+
+  width: 400px;
+}
