@@ -32,7 +32,7 @@
 	    	<fieldset class="contenedorSolicitate">
 	    	<legend class="contenedorSolicitate">Solicitante</legend>
 
-	    		<label>Solicitante:</label> <input type="text" class="form-control" id="solicitante"/>
+	    		<label>Depenencia:</label> <input type="text" class="form-control" id="solicitante"/>
 				
 				
 				<br>
