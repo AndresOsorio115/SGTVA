@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Sistema de Gestión de Transporte.</title>
+	<title>Sistema de Gestión de Transporte 2016.</title>
     <script type="text/javascript" src="/SGTVA/application/js/jquery-1.11.2.js"></script>
     <script type="text/javascript" src="/SGTVA/application/js/javascript.js"></script>
 
