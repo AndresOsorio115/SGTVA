@@ -34,7 +34,7 @@
 
 	    		<label>Solicitante:</label> <input type="text" class="form-control" id="solicitante"/>
 				
-				<label>Buscar:</label> <input type="text" name="buscador" class="form-control" id="buscador" />
+				
 				<br>
 
 				<label>Unidades</label>
