@@ -20,7 +20,7 @@
 <div class="cReserva">
 
 	<fieldset class="contenedorReserva">
-    <legend class="contenedorReserva">Reserva Vehiculo <?php echo $fecha ?> </legend>
+    <legend class="contenedorReserva">Reserva Vehiculo prueba <?php echo $fecha ?> </legend>
 		
 		<p><label for="cmbConductorV">Conductor:</label>
         <select  class="form-control" id="cmbConductorV">

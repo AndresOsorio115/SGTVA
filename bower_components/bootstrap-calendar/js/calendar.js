@@ -989,88 +989,17 @@ if(!String.prototype.formatNum) {
 			var  listSelected= $(this).data('cal-date');
 
 			var  view = $(this).data('cal-view');
-
-			var chooseDate = listSelected.split("-");
-
-			if(chooseDate[0]>today[0]){
-				
-				var view = $(this).data('cal-view');
-				self.options.day = $(this).data('cal-date');
-				self.view(view);
-			} else {
-
-				if (chooseDate[0]==today[0]){
-						
-
-						if(view=="month" && chooseDate[1]==today[1]){
-							var view = $(this).data('cal-view');
-							self.options.day = $(this).data('cal-date');
-							self.view(view);
-						}else{
-
-							if(chooseDate[1]>today[1]){
-								var view = $(this).data('cal-view');
-								self.options.day = $(this).data('cal-date');
-								self.view(view);
-							}else{
-
-								if(chooseDate[1]==today[1]){
-
-									if(chooseDate[2]>=today[2]){
-										var view = $(this).data('cal-view');
-										self.options.day = $(this).data('cal-date');
-										self.view(view);
-									}
-								}
-							}
-						}	
-				}
-			}
+			self.options.day = $(this).data('cal-date');
+			self.view(view);
+			
 		});
 
 		$('.cal-cell').dblclick(function() {
-			
-
-			var  listSelected= $('[data-cal-date]',this).data('cal-date');
-
-			var  view = $('[data-cal-date]',this).data('cal-view');
-
-			var chooseDate = listSelected.split("-");
-
-			if(chooseDate[0]>today[0]){
-				
+		
 				var view = $('[data-cal-date]', this).data('cal-view');
 				self.options.day = $('[data-cal-date]', this).data('cal-date');
 				self.view(view);
-			} else {
-
-				if (chooseDate[0]==today[0]){
-						
-
-						if(view=="month" && chooseDate[1]==today[1]){
-							var view = $('[data-cal-date]', this).data('cal-view');
-							self.options.day = $('[data-cal-date]', this).data('cal-date');
-							self.view(view);
-						}else{
-
-							if(chooseDate[1]>today[1]){
-								var view = $('[data-cal-date]', this).data('cal-view');
-								self.options.day = $('[data-cal-date]', this).data('cal-date');
-								self.view(view);
-							}else{
-
-								if(chooseDate[1]==today[1]){
-
-									if(chooseDate[2]>=today[2]){
-											var view = $('[data-cal-date]', this).data('cal-view');
-											self.options.day = $('[data-cal-date]', this).data('cal-date');
-											self.view(view);
-									}
-								}
-							}
-						}	
-				}
-			}
+			
 		});
 
 		this['_update_' + this.options.view]();
