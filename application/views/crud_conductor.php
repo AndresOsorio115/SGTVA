@@ -41,6 +41,7 @@
 
 		 
              <button type="button" class="btn btn-success" id="cConductor"> Crear </button> 
+             <button type="button" class="btn btn-success" id="eConductor"> Eliminar </button> 
              <button type="button" class="btn btn-success" id="uConductor"> Editar </button>   
              <input type="hidden" id="idC"> </input>    
 
