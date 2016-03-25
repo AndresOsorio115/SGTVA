@@ -152,10 +152,10 @@
 <footer>
     
     <div>
-        <p>Copyright &copy; 2015</p>
-        <p>Julio Cesar Garcia Sabogal</p>
-        <p>Fabio Stiven Oquendo Soler</p>
-        <p>Cristian Daniel Palechor Sepulveda</p>
+        <p>Copyright &copy; 2016</p>
+        <p>Julian Sanchez</p>
+        <p>Santiago Agudelo</p>
+        <p>Andres Osorio Angel</p>
     </div>
     
 </footer>
