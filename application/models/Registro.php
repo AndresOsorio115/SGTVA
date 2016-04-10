@@ -72,6 +72,6 @@ class Registro extends CI_Model {
         {
             return $query->result();
         }
-        return 0;
+        return 0; 
     }
 }
