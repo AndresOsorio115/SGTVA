@@ -6,7 +6,7 @@
 <div class="vContainer">
 
 	<fieldset class="scheduler-border">
-    <legend class="scheduler-border">Conductores</legend>
+    <legend class="scheduler-border">Conductores </legend>
 
 	<div class="dtabla">
 		<fieldset class="scheduler-border">
