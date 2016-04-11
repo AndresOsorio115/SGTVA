@@ -78,9 +78,8 @@ $(document).ready(function() {
                 success: function(respuesta){
                     
                     if(respuesta=="ok"){
-
                     	alert("Se registro correctamente");
-                    	location.href ="/SGTVA/home";
+                    	location.href ="/home";
                     }else{
                     	alert("No se registro correctamente");
                     }

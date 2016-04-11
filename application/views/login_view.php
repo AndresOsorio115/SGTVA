@@ -4,17 +4,16 @@
 
 	<title>Sistema de Gestión de Transporte de la Universidad del Quindío</title>
 
-	<link rel="stylesheet" type="text/css" href="/SGTVA/application/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/SGTVA/application/css/login.css">
-	<script type="text/javascript" src="/SGTVA/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/SGTVA/application/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="/SGTVA/application/js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="/application/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/application/css/login.css">
+    <script type="text/javascript" src="/application/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/application/js/login.js"></script>
 
 </head>
 <body>
 
 	<div id="container">
-	<h1>Sistema de Gestión de Transporte<br><br><img src="https://pbs.twimg.com/profile_images/2436226416/77iwm57o4cyovswjyxki_400x400.jpeg"></h1>
+	<h1>Sistema de Gestión de Transporte<br><br><img src="https://lh6.googleusercontent.com/-ap89qb_eFmY/AAAAAAAAAAI/AAAAAAAAABo/Qw7axggSsPU/s0-c-k-no-ns/photo.jpg"></h1>
 	
 
 	<div class="login">
