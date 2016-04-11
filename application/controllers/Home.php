@@ -577,9 +577,10 @@ class Home extends CI_Controller {
 
 				foreach ($result as $row) {
 						$html.="<tr>";
-						$html.="<th class=\"tipo\">".$row->tipoUnidad."</th>";
-						$html.="<th class=\"nom\">".$row->nombre."</th>";
-					 	$html.="<th class=\"cant\">".$row->cantidad."</th>";
+						$html.="<th>".$row->nombre."</th>";
+						$html.="<th>".$row->placa."</th>";
+					 	$html.="<th>".$row->lugar."</th>";
+					 	$html.="<th>".$row->fecha."</th>";
 						$html.="</tr>";		
 				}
 			}

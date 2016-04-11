@@ -19,7 +19,7 @@ class Registro extends CI_Model {
 
     function  getRegistros($fecha,$vehiculo){
 
-        $query = $this->db->query("SELECT c.nombre, 
+        $query = $this->db->query("SELECT c.nombre,codigoVehiculo, 
             DATE_FORMAT(v.fechaSalida, '%d/%m/%Y %h:%i %p') fechaSalida, 
             DATE_FORMAT(v.fechaLlegada, '%d/%m/%Y %h:%i %p') fechaLlegada, a.descripcion, v.direccionOrigen, s.nombre as solicitante ,r.codigo
                                    FROM  registros r JOIN conductores c on r.codigoConductor=c.codigo
@@ -49,13 +49,12 @@ class Registro extends CI_Model {
     
     function getReporte($fechaInicio,$fechaFin){
 
-         $query= $this->db->query("SELECT u.tipoUnidad, u.nombre, COUNT(r.codigo) as cantidad
-                                    FROM registros r JOIN unidades u 
-                                    ON r.codigoUnidad = u.codigo
-                                    WHERE r.fechaSolicitud BETWEEN '$fechaInicio' AND '$fechaFin'
-                                    GROUP BY u.nombre
-                                    ORDER BY COUNT(r.codigo) DESC");
-
+         $query= $this->db->query("select nombre,placa,descripcion lugar,fechaSolicitud fecha from registros r 
+                                    inner join vehiculos v on (r.codigoVehiculo = v.codigo)
+                                    inner join conductores c on (r.codigoConductor = c.codigo)
+                                    inner join actividades a on (r.codigoActividad = a.codigo) 
+                                    order by fechaSolicitud desc");
+//WHERE r.fechaSolicitud BETWEEN '$fechaInicio' AND '$fechaFin'
         if($query->num_rows() > 0 )
         {
             return $query->result();

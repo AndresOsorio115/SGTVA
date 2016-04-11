@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#cmbmes').on('change', function() {
+    
        
         var mes =$('#cmbmes').val();
         var fechaI = new Date();
@@ -71,5 +71,4 @@ $(document).ready(function() {
                     location.href ="http://localhost/SGTVA/reports/report.pdf";
                 }
         });
-    });
 });
