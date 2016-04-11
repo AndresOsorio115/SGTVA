@@ -44,7 +44,7 @@ class Conductor extends CI_Model {
 
         $this->db->select('codigo,nombre,numTelefono');
         $this->db->from('conductores');
-    
+        
         $query = $this->db->get();
         if($query->num_rows() > 0 )
         {

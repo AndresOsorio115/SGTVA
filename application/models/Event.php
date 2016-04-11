@@ -43,7 +43,7 @@ class Event extends CI_Model
 			return $query->result();
 		}
 		
-		return object();
+		return [];
 	}
 
 	/**

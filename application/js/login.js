@@ -29,7 +29,7 @@ $(document).ready(function() {
                             dataType: "html",
                             success: function(respuesta){
 
-                                location.href = '/SGTVA/home';
+                                location.href = '/home';
                             }
                         });
                     }

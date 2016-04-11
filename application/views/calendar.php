@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="application/css/css.css">
     <link rel="stylesheet" href="bower_components/bootstrap-calendar/css/calendar.css">
 
-    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="application/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="/application/js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="application/js/js.js"></script>
     
     <script src="application/js/bootstrap.min.js"></script>

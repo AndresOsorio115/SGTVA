@@ -4,9 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Sistema de Gestión de Transporte 2016.</title>
-    <script type="text/javascript" src="/SGTVA/application/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="/SGTVA/application/js/javascript.js"></script>
+	<title>Welcome to CodeIgniter</title>
 
 	<style type="text/css">
 
@@ -27,18 +25,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	h1 {
-		color: #20912D;
+		color: #444;
 		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
-		text-align: center;
+		font-size: 19px;
+		font-weight: normal;
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
-	}
-
-	h1 img {
-
-		height: 200px;
-		width: 200px;
 	}
 
 	code {
@@ -65,11 +58,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		margin: 20px 0 0 0;
 	}
 
-	p input {
-
-		font-size: 18px;
-	}
-
 	#container {
 		margin: 10px;
 		border: 1px solid #D0D0D0;
@@ -80,25 +68,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Sistema de Gestión de Transporte<br><br><img src="https://pbs.twimg.com/profile_images/2436226416/77iwm57o4cyovswjyxki_400x400.jpeg"></h1>
-	
+	<h1>Welcome to CodeIgniter!</h1>
 
-	<div class="login">
+	<div id="body">
+		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-	<fieldset class="scheduler-border-login">
-    	<legend class="scheduler-border">Login</legend>
-			
-		    <p><label for="cedula">Cedula:</label>
-		    <input type="text" id="cedula" name="cedula"/></p>
-		    <p><label for="contrasenia">Contraseña:</label>
-		    <input type="password" id="contrasenia" name="contrasenia"/></p>
-		    <p><input type="submit" id="btnLogin" value="Login"/></p>
-		</form>      
+		<p>If you would like to edit this page you'll find it located at:</p>
+		<code>application/views/welcome_message.php</code>
 
-     </fieldset>
+		<p>The corresponding controller for this page is found at:</p>
+		<code>application/controllers/Welcome.php</code>
 
+		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
-
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
