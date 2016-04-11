@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#vehiculos').click(function(event) {
     	
         $.ajax({
-                url: "home/vehiculos",
+                url: "Home/vehiculos",
                 type: "POST",
                 dataType: "html",
                 success: function(respuesta){
@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('#conductores').click(function(event) {
         
         $.ajax({
-                url: "home/conductores",
+                url: "Home/conductores",
                 type: "POST",
                 dataType: "html",
                 success: function(respuesta){
@@ -30,7 +30,7 @@ $(document).ready(function() {
      $('#reportes').click(function(event) {
         
         $.ajax({
-                url: "home/reportes",
+                url: "Home/reportes",
                 type: "POST",
                 dataType: "html",
                 success: function(respuesta){
@@ -43,7 +43,7 @@ $(document).ready(function() {
     $('#usuario').click(function(event) {
         
         $.ajax({
-                url: "home/usuario",
+                url: "Home/usuario",
                 type: "POST",
                 dataType: "html",
                 success: function(respuesta){
@@ -65,7 +65,7 @@ $(document).ready(function() {
         }else{
 
             $.ajax({
-                    url: "home/reserva",
+                    url: "Home/reserva",
                     type: "POST",
                     dataType: "html",
                     data:{
@@ -86,7 +86,7 @@ $(document).ready(function() {
         var fecha = $('.dA').attr("id");
 
         $.ajax({
-                url: "home/getReservas",
+                url: "Home/getReservas",
                 type: "POST",
                 dataType: "html",
                 data:{

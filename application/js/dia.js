@@ -57,7 +57,7 @@ $(document).ready(function() {
  		}else{
 
  			$.ajax({
-                url: "home/agregarReserva",
+                url: "Home/agregarReserva",
                 type: "POST",
                 dataType: "html",
                 data:{

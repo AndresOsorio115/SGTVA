@@ -59,7 +59,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-                url: "home/pdf",
+                url: "Home/pdf",
                 type: "POST",
                 dataType: "html",
                 data:{
