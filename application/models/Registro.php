@@ -19,7 +19,9 @@ class Registro extends CI_Model {
 
     function  getRegistros($fecha,$vehiculo){
 
-        $query = $this->db->query("SELECT c.nombre, v.fechaSalida, v.fechaLlegada, a.descripcion, v.direccionOrigen, s.nombre as solicitante ,r.codigo
+        $query = $this->db->query("SELECT c.nombre, 
+            DATE_FORMAT(v.fechaSalida, '%d/%m/%Y %h:%i %p') fechaSalida, 
+            DATE_FORMAT(v.fechaLlegada, '%d/%m/%Y %h:%i %p') fechaLlegada, a.descripcion, v.direccionOrigen, s.nombre as solicitante ,r.codigo
                                    FROM  registros r JOIN conductores c on r.codigoConductor=c.codigo
                                    JOIN  viajes v on r.codigoViaje= v.codigo
                                    JOIN  actividades a on r.codigoActividad= a.codigo
@@ -63,7 +65,9 @@ class Registro extends CI_Model {
 
     function getRegistrosDia($fecha){
      
-        $query= $this->db->query("SELECT r.codigoVehiculo, r.codigoConductor,v.fechaLlegada,v.fechaSalida
+        $query= $this->db->query("SELECT r.codigoVehiculo, r.codigoConductor,
+            DATE_FORMAT(v.fechaLlegada, '%d/%m/%Y %h:%i %p') fechaLlegada,
+            DATE_FORMAT(v.fechaSalida, '%d/%m/%Y %h:%i %p') fechaSalida
                                   FROM registros r JOIN viajes v 
                                   on r.codigoViaje= v.codigo
                                   WHERE r.fechaSolicitud='$fecha' ");
@@ -72,6 +76,6 @@ class Registro extends CI_Model {
         {
             return $query->result();
         }
-        return 0; 
+        return 0;
     }
 }

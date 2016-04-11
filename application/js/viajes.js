@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-                url: "home/getReportes",
+                url: "Home/getReportes",
                 type: "POST",
                 dataType: "html",
                 data:{
