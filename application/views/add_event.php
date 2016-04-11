@@ -2,14 +2,9 @@
 <head>
 	<title>Crear un nuevo evento</title>
 	<meta charset="utf-8">
-
-	<script src="bower_components/jquery/jquery.min.js"></script>
-	<script src="bower_components/moment/moment.js"></script>
-	<script src="bower_components/eonasdan-bootstrap-datetimepicker/bootstrap/bootstrap.min.js"></script>
-	<script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
-	<script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.es.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="application/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="application/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="application/css/css.css">
 	<script src="application/js/addEvent.js"></script>
 	<link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />

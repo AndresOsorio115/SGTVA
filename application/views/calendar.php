@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>SGTVA </title>
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="application/css/css.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap-calendar/css/calendar.css">
 
     <script type="text/javascript" src="/application/js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="application/js/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="application/js/bootstrap.js">
     
     <script src="application/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap-calendar/js/language/es-ES.js"></script>

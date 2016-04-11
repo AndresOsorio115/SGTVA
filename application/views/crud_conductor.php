@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" type="text/css" href="application/css/bootstrap.min.css">
 <head>
     <script src="application/js/crudConductores.js"></script> 
 </head>
@@ -16,6 +18,7 @@
 						<tr>
 							<th>Nombre</th>
 							<th>Telefono</th>
+							<th>Ver</th>
 						</tr>	
 					</thead>
 
@@ -41,7 +44,8 @@
 
 		 
              <button type="button" class="btn btn-success" id="cConductor"> Crear </button> 
-             <button type="button" class="btn btn-success" id="uConductor"> Editar </button>   
+             <button type="button" class="btn btn-success" id="uConductor"> Editar </button>
+             <button type="button" class="btn btn-success" id="eConductor"> Eliminar </button>    
              <input type="hidden" id="idC"> </input>    
 
      </fieldset>

@@ -46,6 +46,7 @@ class Home extends CI_Controller {
 				$html.="<th class=\"ref\">".$row->referencia."</th>";
 				$html.="<th class=\"cm\">".$row->capacidadMax."</th>";
 				$html.="<th class=\"pla\">".$row->placa."</th>";
+				$html.='<th><i class="icon-edit"></i> Modificar</th>';
 				$html.="</tr>";		
 			}
 		}
@@ -164,6 +165,7 @@ class Home extends CI_Controller {
 				$html.="<tr id=\"".$row->codigo."\" class=\"click\">";
 				$html.="<th class=\"nom\">".$row->nombre."</th>";
 				$html.="<th class=\"tel\">".$row->numTelefono."</th>";
+				$html.='<th><i class="icon-edit"></i> Modificar</th>';
 				$html.="</tr>";		
 			}
 		}

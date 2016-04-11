@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="application/css/bootstrap.min.css">
 <head>
     <script src="application/js/crd.js"></script> 
 </head>
@@ -17,6 +18,7 @@
 							<th>Referencia</th>
 							<th>Capacidad Máxima</th>
 							<th>Placa</th>
+							<th>Ver</th>
 						</tr>	
 					</thead>
 
