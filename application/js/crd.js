@@ -11,7 +11,7 @@ $(document).ready(function() {
         if(!isNaN(cm) && placa!=null && cm!=null){
 
             $.ajax({
-                url: "home/cVehiculo",
+                url: "Home/cVehiculo",
                 type: "POST",
                 data:{
                         referencia: ref,
@@ -28,7 +28,7 @@ $(document).ready(function() {
                         $("#cm").val('');
 
                         $.ajax({
-                            url: "home/vehiculos",
+                            url: "Home/vehiculos",
                             type: "POST",
                             dataType: "html",
                             success: function(respuesta){
@@ -55,7 +55,7 @@ $(document).ready(function() {
         if(!isNaN(cm) && placa!=null && cm!=null && id!=null){
 
             $.ajax({
-                url: "home/uVehiculo",
+                url: "Home/uVehiculo",
                 type: "POST",
                 data:{
                         id:id,
@@ -73,7 +73,7 @@ $(document).ready(function() {
                         $("#cm").val('');
 
                         $.ajax({
-                            url: "home/vehiculos",
+                            url: "Home/vehiculos",
                             type: "POST",
                             dataType: "html",
                             success: function(respuesta){
@@ -98,10 +98,13 @@ $(document).ready(function() {
         if(id!=null){
 
             $.ajax({
-                url: "home/eVehiculo",
+                url: "Home/eVehiculo",
                 type: "POST",
                 data:{
                         id:id
+                },
+                error:function (argument) {
+                  alert(argument.responseText.split("</p><p>")[1]);
                 },
                 success: function(respuesta){
                     
@@ -114,7 +117,7 @@ $(document).ready(function() {
                         $("#cm").val('');
 
                         $.ajax({
-                            url: "home/vehiculos",
+                            url: "Home/vehiculos",
                             type: "POST",
                             dataType: "html",
                             success: function(respuesta){

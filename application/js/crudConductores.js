@@ -8,7 +8,7 @@ $(document).ready(function() {
         if(!nom!=null && tel!=null){
 
             $.ajax({
-                url: "home/cConductor",
+                url: "Home/cConductor",
                 type: "POST",
                 data:{
                         nombre: nom,
@@ -49,7 +49,7 @@ $(document).ready(function() {
         if(nom!=null && tel!=null && id!=null){
 
             $.ajax({
-                url: "home/uConductor",
+                url: "Home/uConductor",
                 type: "POST",
                 data:{
                         id:id,
@@ -65,7 +65,7 @@ $(document).ready(function() {
                         $("#telefono").val('');
 
                         $.ajax({
-                            url: "home/conductores",
+                            url: "Home/conductores",
                             type: "POST",
                             dataType: "html",
                             success: function(respuesta){
@@ -89,10 +89,13 @@ $(document).ready(function() {
         if(id!=null){
 
             $.ajax({
-                url: "home/eConductor",
+                url: "Home/eConductor",
                 type: "POST",
                 data:{
                         id:id
+                },
+                error:function (argument) {
+                  alert(argument.responseText.split("</p><p>")[1]);
                 },
                 success: function(respuesta){
                     
