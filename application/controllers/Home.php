@@ -2,9 +2,17 @@
 if ( ! defined('BASEPATH')){
 	exit('No direct script access allowed');
 }
+
+/**
+ * Esta clase representa el controlador Home,
+ * el cual jugara el rol principal en cuanto a las
+ * funcionalidades de los controladores.
+ */
 class Home extends CI_Controller {
 
- 
+ 	/**
+ 	 * Este es el metodo principal de la clase.
+ 	 */
  	function index() {
    		
    			
@@ -20,7 +28,10 @@ class Home extends CI_Controller {
 			 exit();
 		}
  	}
- 
+ 	
+ 	/**
+ 	 * Este metodo cierra la sesion del usuario actual.
+ 	 */
 	public function logout() {
 
 	   $this->session->unset_userdata('logged_in');
@@ -32,6 +43,10 @@ class Home extends CI_Controller {
 
 //----------------------------------------------VEHICULOS---------------------------------------------//
 
+	/**
+	 * Este metodo se encarga de gestionar los vehiculos,
+	 * Cargando el modelo y sobrecargando el html con los datos obtenidos.
+	 */
 	public function vehiculos(){
 
 		$this->load->model("vehiculo");
@@ -57,6 +72,9 @@ class Home extends CI_Controller {
 		echo $response;
 	}
 
+	/**
+	 * Esta funcion carga los vehiculos obtenidos del modelo al html.
+	 */
 	public function vehiculosCmb(){
 
 		$this->load->model("vehiculo");
@@ -72,6 +90,11 @@ class Home extends CI_Controller {
 		}
 		echo $html;
 	}
+	
+	/**
+	 * Este emtodo realiza la consulta de los vehiculos,
+	 * a partir de la placa en los modelos.
+	 */
 	public function cVehiculo(){
 
 		if($_POST) {	
@@ -103,6 +126,9 @@ class Home extends CI_Controller {
 		}
 	}
 
+	/**
+	 * Este metodo se encarga de hacer update en los campos de los vehiculos.
+	 */
 	public function uVehiculo(){
 
 		if($_POST) {	
@@ -129,6 +155,9 @@ class Home extends CI_Controller {
 		}
 	}
 
+	/**
+	 * Este metodo se encarga de eliminar los registros de los vehiculos.
+	 */
 	public function eVehiculo(){
 
 		if($_POST) {	
@@ -177,6 +206,10 @@ class Home extends CI_Controller {
 		
 	}
 
+	/**
+	 * Este metodo se encarga de crear los conductores,
+	 * cargando sus respectivos modelos.
+	 */
 	public function cConductor(){
 
 		if($_POST) {	
@@ -201,6 +234,9 @@ class Home extends CI_Controller {
 
 	}
 
+	/**
+	 * Metodo encargado de hacer update en los campos del conductor
+	 */
 	public function uConductor(){
 
 		if($_POST) {	
@@ -227,7 +263,10 @@ class Home extends CI_Controller {
 		}
 	}
 
-
+	/**
+	 * Este metodo es el encargado de eliminar los conductores,
+	 * dado el id del conductor indicado.
+	 */
 	public function eConductor(){
 
 		if($_POST) {	
@@ -253,6 +292,9 @@ class Home extends CI_Controller {
 
 //----------------------------------------------USUARIO---------------------------------------------//
 	
+	/**
+	 * Este metodo se encarga de relizar la creacion de los usuarios
+	 */
 	public function usuario(){
 
 
@@ -286,6 +328,10 @@ class Home extends CI_Controller {
 		echo $response;
 	}
 
+	/**
+	 * Este metodo se encarga de aignar las contrasenias,
+	 * relizando un cifrado md5 a dichas contrasenias.
+	 */
 	public function confirmarContra(){
 
 		if($_POST) {	
@@ -312,6 +358,9 @@ class Home extends CI_Controller {
 		}
 	}
 
+	/**
+	 * Este metodo se encarga de editar y actualizar los datos del usuario.
+	 */
 	public function editarUsuario(){
 
 		if($_POST) {	
@@ -352,6 +401,11 @@ class Home extends CI_Controller {
 				}
 		}
 	}
+	
+	/**
+	 * Este metodo se encarga de generar las reservas del aplicativo,
+	 * dado el conductor solicitante.
+	 */
 	public function reserva(){
 
 		if($_POST) {	
@@ -398,6 +452,12 @@ class Home extends CI_Controller {
 		}
 	}
 
+	/**
+	 * Este metodo se  encarga de agregar las reservas de los vehivulos,
+	 * es necesario comprender que se necesita un conductor que realiza la reserva,
+	 * un vehiculo a ser reservado, adicionalmente se debe conocer los datos complementrarios
+	 * de la reserva.
+	 */
 	public function agregarReserva(){
 
 		if($_POST) {
@@ -514,6 +574,11 @@ class Home extends CI_Controller {
 		}
 	}
 
+	/**
+	 * Este metodo esta programado para obtener las reservas que se
+	 * han realizado en la aplicacion, con el fin de reportar 
+	 * lo sucedido.
+	 */
 	public function getReservas(){
 
 		if($_POST) {	
@@ -545,7 +610,10 @@ class Home extends CI_Controller {
 	}
 
 
-
+	/**
+	 * Este metodo se encarga de generar los reportes de
+	 * uso de la aplicacion, es decir, reservas, conductores, etc.
+	 */
 	public function reportes(){
 
 		//$this->load->model("conductor");
@@ -558,7 +626,10 @@ class Home extends CI_Controller {
 		echo $response;
 	}
 
-
+	/**
+	 * Este metodo carga los reportes generados a partir de la informacion
+	 * ingresada en  el software.
+	 */
 	public function getReportes(){
 
 		//$this->load->model("conductor");
@@ -590,7 +661,10 @@ class Home extends CI_Controller {
 	
 	}
 
-
+	/**
+	 * Este metodo es el encargado de generar reportes en formato pdf,
+	 * dado que esto fue solicitado por parte del cliente.
+	 */
 	public function pdf(){
 		// As PDF creation takes a bit of memory, we're saving the created file in /downloads/reports/
 
