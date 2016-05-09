@@ -2,13 +2,20 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * Esta clase representa los eventos que pueden ser capturados,
+ * para despues ser tratados en los modelos a travez de peticiones ajax.
+ */
 class Events extends CI_Controller {
 		
 		public function index()
 		{
 			$this->load->view("add_event");
 		}
-
+		
+		/**
+		 * Este metodo se encarga de guardar los eventos dados sus respectivos modelos.
+		 */
 		public function save()
 		{
 			if($_POST) {	
@@ -23,7 +30,10 @@ class Events extends CI_Controller {
 				echo "ok";
 			}
 		}
-
+		
+		/**
+		 * Este metodo obtiene todos los posibles eventos capturados.
+		 */
 		public function getAll()
 		{
 				if($this->input->is_ajax_request())
