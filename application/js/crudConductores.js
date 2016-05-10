@@ -1,5 +1,9 @@
 $(document).ready(function() {
-
+     
+     /**
+      * Esta función se encarga realizar la creacion de los conductores
+      * para realizar dicha accion se solicitan los valores de los campos correspondientes a los conductores.
+      */
      $('#cConductor').click(function(event) {
        
         var nom = $('#nombre').val();
@@ -39,7 +43,10 @@ $(document).ready(function() {
         }
     });
 
-
+     /**
+      * Esta funcion es la encargada de realizar la actualizacion de los
+      * campos correspondientes a los conductores con la nueva informacion.
+      */
     $('#uConductor').click(function(event) {
         
         var id= $('#idC').val();
@@ -83,6 +90,10 @@ $(document).ready(function() {
         }
     });
 
+     /**
+      * Este metodo es el usado para realizar la correcta
+      * eliminacion de los conductores cuando sea requerido por la cliente.
+      */
     $('#eConductor').click(function(event) {
        
         var id= $('#idC').val();
