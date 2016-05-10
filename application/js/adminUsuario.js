@@ -1,8 +1,15 @@
 $(document).ready(function() {
 
-
+    /**
+     * Esta funcion es la encargada de editar los campos de los
+     * usuarios a partir de las accines capturadas enel software a traves de los
+     * clics presionados.
+     */
     $('#editarU').click(function(event) {
         
+        /**
+         * Declaramos los campos que tendran los usuarios
+         */
         var codigo= $('#codigo').val();
         var nombre = $('#nombre').val();
         var cedula = $('#cedula').val();
@@ -10,7 +17,9 @@ $(document).ready(function() {
         var nuevaContra = $('#nuevaContra').val();
         var confContra = $('#confContra').val();
 
-      
+      /**
+       * Realizamos las validaciones de los campos
+       */
         if(nombre!="" && cedula!="" && contrasenia!="" && codigo!="") {
 
         	$.ajax({
@@ -94,7 +103,9 @@ $(document).ready(function() {
         	
             
         } else {
-
+	/**
+	 * Lanzamos alertas que notifiquen los problemas encontrados en el formulario.
+	 */
             alert("Debe ingresar minimo los campos (Nombre, Cedula y Contraseña actual) para poder editar");
         }
     });
