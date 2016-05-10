@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-
+     /**
+      * Esta función se encarga realizar la creacion de los vehiculos
+      * para realizar dicha accion se solicitan los valores de los campos correspondientes a los vehiculos.
+      */
      $('#cVehiculo').click(function(event) {
 
        
@@ -44,7 +47,10 @@ $(document).ready(function() {
         }
     });
 
-
+     /**
+      * Esta funcion es la encargada de realizar la actualizacion de los
+      * campos correspondientes a los vehiculos con la nueva informacion.
+      */
     $('#uVehiculo').click(function(event) {
         
         var id= $('#idV').val();
@@ -91,6 +97,10 @@ $(document).ready(function() {
         }
     });
 
+     /**
+      * Este metodo es el usado para realizar la correcta
+      * eliminacion de los vehiculos cuando sea requerido por la cliente.
+      */
     $('#eVehiculo').click(function(event) {
        
         var id= $('#idV').val();
@@ -136,6 +146,9 @@ $(document).ready(function() {
         }
     });
 
+     /**
+      * Esta funcion realiza los enlaces de los campos con los valores correspondientes.
+      */
     $(".click").click(function(e) {
         var data = $(this).attr("id");
 
