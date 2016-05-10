@@ -6,7 +6,9 @@ $(document).ready(function() {
         var to = $('#to').data('date');
 
         alert(to+" " + from);
-        
+        /**
+         * Realizamos la peticion ajax para hacer save de los eventos
+         */
         $.ajax({
                     url: "events/save",
                     type: "POST",
