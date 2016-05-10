@@ -2,7 +2,10 @@
 $(document).ready(function() {
 
     $('#vehiculos').click(function(event) {
-    	
+    	/**
+    	 * Se realiza la peticion ajax esperando a que retorne
+    	 * y redireccione a la pagina solicitada para los vehiculos.
+    	 */
         $.ajax({
                 url: "Home/vehiculos",
                 type: "POST",
@@ -15,7 +18,10 @@ $(document).ready(function() {
     });
 
     $('#conductores').click(function(event) {
-        
+        /**
+    	 * Se realiza la peticion ajax esperando a que retorne
+    	 * y redireccione a la pagina solicitada para los conductores.
+    	 */
         $.ajax({
                 url: "Home/conductores",
                 type: "POST",
@@ -28,7 +34,10 @@ $(document).ready(function() {
     });
 
      $('#reportes').click(function(event) {
-        
+        /**
+    	 * Se realiza la peticion ajax esperando a que retorne
+    	 * y redireccione a la pagina solicitada para los reportes.
+    	 */
         $.ajax({
                 url: "Home/reportes",
                 type: "POST",
@@ -41,7 +50,10 @@ $(document).ready(function() {
     });
 
     $('#usuario').click(function(event) {
-        
+        /**
+    	 * Se realiza la peticion ajax esperando a que retorne
+    	 * y redireccione a la pagina solicitada para los usuarios.
+    	 */
         $.ajax({
                 url: "Home/usuario",
                 type: "POST",
